@@ -1,0 +1,17 @@
+{
+  "name": "dummy-image-creator",
+  "version": "1.0.0",
+  "description": "creating dummy images of particular length and height",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dummy",
+    "image",
+    "dynamic",
+    "test-image"
+  ],
+  "author": "diwaker.singh",
+  "license": "ISC"
+}
