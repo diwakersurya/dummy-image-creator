@@ -4,12 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Dummy Image Creator</title>
 </head>
 <body>
-<canvas id="myCanvas" width="300" height="150" style="border:1px solid #d3d3d3;"></canvas>
-<button onClick="download()">download</button>
-
+<canvas id="myCanvas" style="border:1px solid #d3d3d3;display:none"></canvas>
+<div class="container">
+    <div class="title-header">DUMMY IMAGE CREATOR</div>
+    <div class="child-container">
+        <div class="child-wrapper">
+            <label for="color">Background color</label><br/>
+            <input class="color"type="text" name="color"/>
+        </div>
+    </div>
+    <div class="child-container">
+        <div class="child-wrapper">
+            <label for="width">Width</label><br/>
+            <input class="width" type="text" name="width"/> 
+        </div>
+        <div class="child-wrapper">
+            <label for="height">Height</label><br/>
+            <input class="height"type="text" name="height"/>
+        </div>
+    </div>
+    <div class="child-container">
+        <div class="child-wrapper">
+            <button onClick="download()">Create and Download</button>
+        </div>
+    </div>
+</div>
 </body>
 <script src="index.js"></script>
 
