@@ -3,8 +3,10 @@ var AVAILABLE_COLORS = ["red", "green", "blue", "yellow", "cyan", "magenta", "pu
 function newFunction(color, width, height) {
     var c = document.querySelector("#myCanvas");
     var ctx = c.getContext("2d");
+    ctx.canvas.width = width;
+    ctx.canvas.height = height;
     ctx.beginPath();
-    ctx.rect(20, 20, width, height);
+    ctx.rect(0, 0, width, height);
     ctx.fillStyle = color;
     ctx.fill();
 }
