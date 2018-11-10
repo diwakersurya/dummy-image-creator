@@ -21,7 +21,7 @@ function download() {
     var image = document.getElementById("myCanvas")
         .toDataURL("image/png")
         .replace("image/png", "image/octet-stream");
-    downloadLink.download = color + width + "X" + height;
+    downloadLink.download = color + width + "X" + height + ".png";
     downloadLink.setAttribute("href", image);
     downloadLink.click();
 }
