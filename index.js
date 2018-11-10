@@ -10,7 +10,9 @@ function newFunction(color, width, height) {
 }
 function download() {
     var width = document.querySelector(".width").value || "500";
+    width = parseInt(width, 10);
     var height = document.querySelector(".height").value || "300";
+    height = parseInt(height, 10);
     var color = document.querySelector(".color").value || "red";
     if (AVAILABLE_COLORS.indexOf(color.toLowerCase()) === -1) {
         color = "red";
