@@ -5,34 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Dummy Image Creator</title>
 </head>
 
 <body>
-    <canvas id="myCanvas" style="border:1px solid #d3d3d3;display:none"></canvas>
+    <!-- <canvas id="myCanvas" style="border:1px solid #d3d3d3"></canvas> -->
     <div class="container">
         <div class="title-header">DUMMY IMAGE CREATOR</div>
-        <div class="child-container">
-            <div class="child-wrapper">
-                <label for="color">Background color</label><br />
-                <input class="color" type="text" name="color" />
+        <div class="controls">
+            <div class="child-container">
+                <div class="child-wrapper">
+                    <label for="color">Background color</label><br />
+                    <select name="color" id="color">
+                        <!-- <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option> -->
+                    </select>
+                    <!-- <input class="color" type="text" name="color" /> -->
+                </div>
+            </div>
+            <div class="child-container">
+                <div class="child-wrapper">
+                    <label for="width">Width</label><br />
+                    <input class="width" type="text" name="width" value="850" />
+                </div>
+            </div>
+            <div class="child-container">
+                <div class="child-wrapper">
+                    <label for="height">Height</label><br />
+                    <input class="height" type="text" name="height" value="200" />
+                </div>
+            </div>
+            <div class="child-container">
+                <div class="button-wrapper">
+                    <button onClick="download()">Create and Download</button>
+                </div>
             </div>
         </div>
-        <div class="child-container">
-            <div class="child-wrapper">
-                <label for="width">Width</label><br />
-                <input class="width" type="text" name="width" />
-            </div>
-            <div class="child-wrapper">
-                <label for="height">Height</label><br />
-                <input class="height" type="text" name="height" />
-            </div>
-        </div>
-        <div class="child-container">
-            <div class="child-wrapper">
-                <button onClick="download()">Create and Download</button>
-            </div>
+        <div class="preview">
+            <canvas id="myCanvas"></canvas>
         </div>
     </div>
 </body>
